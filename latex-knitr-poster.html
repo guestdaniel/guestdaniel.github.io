@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="https://guestdaniel.github.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://guestdaniel.github.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://guestdaniel.github.io/theme/font-awesome/css/font-awesome.min.css">
+
+
+
+
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+
+
+<meta name="author" content="Daniel Guest" />
+<meta name="description" content="How to make a conference poster using LaTeX and KnitR" />
+<meta name="keywords" content="latex, knitr, R">
+<meta property="og:site_name" content="Daniel Guest"/>
+<meta property="og:title" content="LaTeX / KnitR Conference Poster Template"/>
+<meta property="og:description" content="How to make a conference poster using LaTeX and KnitR"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://guestdaniel.github.io/latex-knitr-poster.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2017-08-25 16:28:00-05:00"/>
+<meta property="article:modified_time" content="2017-08-25 16:28:00-05:00"/>
+<meta property="article:author" content="https://guestdaniel.github.io/author/daniel-guest.html">
+<meta property="article:section" content="LaTeX"/>
+<meta property="article:tag" content="latex"/>
+<meta property="article:tag" content="knitr"/>
+<meta property="article:tag" content="R"/>
+<meta property="og:image" content="https://guestdaniel.github.io/images/profile.jpg">
+
+  <title>Daniel Guest &ndash; LaTeX / KnitR Conference Poster Template</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://guestdaniel.github.io">
+        <img src="https://guestdaniel.github.io/images/profile.jpg" alt="Daniel Guest" title="Daniel Guest">
+      </a>
+      <h1><a href="https://guestdaniel.github.io">Daniel Guest</a></h1>
+
+<p>PhD student<br>Department of Psychology<br>University of Minnesota</p>
+      <nav>
+        <ul class="list">
+          <li><a href="https://guestdaniel.github.io/pages/about.html#about">About</a></li>
+          <li><a href="https://guestdaniel.github.io/pages/cv.html#cv">CV</a></li>
+          <li><a href="https://guestdaniel.github.io/#home">Home</a></li>
+          <li><a href="https://guestdaniel.github.io/pages/research.html#research">Research</a></li>
+
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-You can add links in your config file" href="#" target="_blank"><i class="fa fa-You can add links in your config file"></i></a></li>
+        <li><a class="sc-Another social link" href="#" target="_blank"><i class="fa fa-Another social link"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://guestdaniel.github.io">    Home
+</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+
+    </nav>
+
+<article class="single">
+  <header>
+    <h1 id="latex-knitr-poster">LaTeX / KnitR Conference Poster Template</h1>
+    <p>
+          Posted on August 25, 2017 in <a href="https://guestdaniel.github.io/category/latex.html">LaTeX</a>
+
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>Quickly into making my first conference poster with PowerPoint, I realized that I never wanted to make another poster in PowerPoint again. I often thought PowerPoint was frustrating to use and I found myself repeating the same things over and over again as I revised the poster (such as regenerating a figure in R to adjust something small and then importing and scaling the image in PowerPoint). Moreover, I prefer Linux over Windows, command line interface tools over GUIs, and open source software over proprietary software. This got me thinking about making a poster in LaTeX instead.</p>
+<p>I did some research and found the <a href="https://www.ctan.org/tex-archive/macros/latex/contrib/beamerposter?lang=en">beamerposter package</a> as well as a <a href="http://www.nathanieljohnston.com/2009/08/latex-poster-template/">great template and theme</a> online and got to work. I'm fairly proud of <a href="https://guestdaniel.github.io/download/GuestetalASA17.pdf">my end result</a>, even if the source code was not quite as pretty as the poster itself. My poster necessitated a lot of departures from the template I had started with. The biggest one was using a .Rnw source file and then using KnitR to turn it into a .tex file. This allowed me to include all the R code I had used to process my data and create my figures in the source file, and then to include the figures directly in the output document. To me, the three primary benfits of designing my poster this way were: </p>
+<ol>
+<li>I got access to all the power of LaTeX (e.g., great math typesetting)</li>
+<li>Changes to the analysis/figures were easy to implement on the fly</li>
+<li>The poster is readily reproducible </li>
+</ol>
+<p>I've put together an example poster using an adapted version of the aforementioned template and theme for those who are interested in creating posters in LateX and who also use R. The files can be found in a GitHub repo <a href="https://github.com/guestdaniel/postertemplate">here</a>, and you can download them all as a .zip by clicking <a href="https://github.com/guestdaniel/postertemplate/archive/master.zip">this link</a>. <code>README.md</code> contains the a basic overview of the files and info on how to get started! Let me know if you have any questions by <a href="mailto:guest121@umn.edu">sending me an email</a>.</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://guestdaniel.github.io/tag/latex.html">latex</a>
+      <a href="https://guestdaniel.github.io/tag/knitr.html">knitr</a>
+      <a href="https://guestdaniel.github.io/tag/r.html">R</a>
+    </p>
+  </div>
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy; Daniel Guest True</p>
+<p>    Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a>
+</p>    </footer>
+  </main>
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Daniel Guest ",
+  "url" : "https://guestdaniel.github.io",
+  "image": "https://guestdaniel.github.io/images/profile.jpg",
+  "description": ""
+}
+</script>
+</body>
+</html>
