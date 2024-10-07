@@ -1,104 +1,134 @@
+<!-- JOHN DOE’S PAGE - https://github.com/cadars/john-doe/ -->
+
 <!DOCTYPE html>
-<html><head>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     
-        <title>Daniel Guest</title>
-        <meta name="description" content="PhD student in the Department of Psychology at the University of Minnesota working in Dr. Andrew Oxenham&#39;s Auditory Perception and Cognition Lab and Dr. Kendrick Kay&#39;s Computational Visual Neuroscience Lab. Current research focuses include perception of complex sounds at high frequencies and representation of high-level visual features in the human pulvinar. Interested in perception, neuroscience, statistics, programming, and mathematics." >
-        <meta property="og:description" content="PhD student in the Department of Psychology at the University of Minnesota working in Dr. Andrew Oxenham&#39;s Auditory Perception and Cognition Lab and Dr. Kendrick Kay&#39;s Computational Visual Neuroscience Lab. Current research focuses include perception of complex sounds at high frequencies and representation of high-level visual features in the human pulvinar. Interested in perception, neuroscience, statistics, programming, and mathematics."/>
+    <title>Daniel Guest</title>
+    <meta name="description" content="Site description">
     
+    <!-- Recommended minimum -->
+    <meta property="og:title" content="Daniel Guest">
+    <meta property="og:description" content="Site description">
+    <meta property="og:image" content="img/site-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
     
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
-
+    <!-- You could also inline the stylesheet -->
+    <link rel="stylesheet" href="style.css">
     
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+  </head>
 
+    <body>
     
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
-        onload="renderMathInElement(document.body);"></script>
+    <main>
+      
+      <section id="home"> <!-- HOME -->
+
+    <img loading="lazy" alt="" src="img/complex.png">
+        
+  <h1> Daniel Guest </h1>
+
+  <p> Postdoc working in Laurel Carney's lab at the University of Rochester. My current research focuses on building computational models of the auditory periphery and subcortex and applying them to better understand human auditory behavior, such as detection of complex sounds in noise. My interests intersect auditory psychophysics, physiology, and computational modeling. I am an advocate for high-quality and open scientific code; I program in MATLAB, Python, Julia, and C.  <a href="file/cv.pdf">Full CV</a> </p>
+
+  <h1> Code </h1>
+  <p> 
+    <b><a href="https://github.com/guestdaniel/AuditorySignalUtils.jl"> AuditorySignalUtils.jl </a></b>
+    Simple utilities for auditory signal processing in Julia
+  </p>
+
+  <p> 
+    <b><a href="https://github.com/guestdaniel/Klatt.jl"> Klatt.jl </a></b>
+    Subset of <a href="https://github.com/guestdaniel/Klatt.jl">Klatt (1980)</a> vowel synthesis in Julia
+  </p>
+
+  <p> 
+    <b><a href="https://github.com/guestdaniel/PyZBC2014"> PyZBC2014 </a></b>
+    Python 3 wrapper for the <a href="https://doi.org/10.1121/1.4837815">Zilany, Bruce, Carney (2014)</a> auditory-nerve model
+  </p>
+
+  <p>
+    <b><a href="https://github.com/guestdaniel/EfferentModelCarneyC"> EfferentModelCarneyC </a></b>
+    C code for Guest and Carney medial-olivocochlear efferent models
+  </p>
+
+  <p>
+    <b><a href="https://github.com/guestdaniel/EfferentModelCarneyWrappers"> EfferentModelCarneyWrappers </a></b>
+     Wrapper code for Guest and Carney medial-olivocochlear efferent models
+  </p>
+
+  <h1> Funding </h1>
+
+  <p> <b> NIDCD F32 (DC022143) | 2024–2027 | ~$210k </b> </p>
+
+  <p> Modeling the effects of binaural midbrain coding and efferent gain control on the perception of complex sounds </p>
+
+  <p> <b> NIDCD F31 (DC019247) | 2020–2022 | ~$120k </b> </p>
+  <p> Processing of complex sounds at high frequencies </p>
+
+  <h1> Papers </h1>
+  <p> <a href="https://zenodo.org/records/13334206"> Graves, <b>Guest</b>, and Mehta (<i>preprint, in prep</i>)</a> Multiple pitch perception with rate-place metamers </p>
+
+  <p> <a href="https://doi.org/10.1101/2023.11.30.569467 "> <b>Guest</b> and Carney (<i>preprint, in review</i>) </a> A fast and flexible approximation of power-law adaptation for auditory computational models </p>
+
+  <p> <a href="https://doi.org/10.1101/2023.11.30.569471 "> <b>Guest</b>, Cameron, Schwarz, Leong, Richards, and Carney (<i>preprint, in review</i>) </a> Profile analysis in listeners with sensorineural hearing loss </p>
+
+  <p> <a href="https://doi.org/10.1121/10.0026475"> <b>Guest</b>, Rajappa, and Oxenham (2024) </a>  Limitations in human auditory spectral analysis at high frequencies </p>
+
+  <p> <a href="https://doi.org/10.3390/biology12121522"> Rajappa, <b>Guest</b>, and Oxenham (2023) </a>  Benefits of harmonicity for hearing in noise are limited to detection and pitch-related discrimination tasks </p>
+
+  <p> <a href="https://doi.org/10.1371/journal.pcbi.1009889"> <b>Guest</b> and Oxenham (2022) </a> Human discrimination and modeling of high-frequency complex tones shed light on the neural codes for pitch</p>
+
+  <p> <a href="https://doi.org/10.1177/00238309211029679"> Kapolowicz, <b>Guest</b>, Montazeri, Baese-Berk, and Assmann (2021) </a> Effects of spectral envelope and fundamental frequency shifts on the perception of foreign-accented speech </p>
+ 
+  <p> <a href="https://doi.org/10.1121/1.5102169"> <b>Guest</b> and Oxenham (2019) </a> The role of pitch and harmonic cancellation when listening to speech in harmonic background sounds </p>
+
+	<h1> Research positions </h1>
+
+	<p>2022–present: Postdoctoral fellow (Rochester, PI: Carney)</p>
+
+	<p>2017–2022: Graduate student (Minnesota, PI: Oxenham)</p>
+
+	<p>2019–2022: Graduate student (Minnesota, PI: Kay)</p>
+
+	<p>2015–2017: Undergraduate research assistant (UT Dallas, PI: Assmann)</p>
+
+	<h1> Education </h1>
+
+	<p>2017–2022: PhD Psychology (Minnesota)</p>
+
+	<p>2013–2017: BS Psychology (UT Dallas)</p>
+
+      </section>
+       
+    </main>
     
-    <meta name="keywords" content="fast, hugo, theme, minimal, gruvbox">
-    <link rel="icon" type="image/svg" href='https://guestdaniel.github.io/img/logo.png'/>
-    <meta name="author" content='jane_doe'>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="Hugo 0.68.3" />
-    <link rel="stylesheet" href='https://guestdaniel.github.io/css/style.css' type="text/css" media="screen" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" />
-    
-    <link rel="alternate" type="application/rss+xml" href="https://guestdaniel.github.io/index.xml" title="Daniel Guest" />
-    </head>
+    <!-- ----------
+    LIGHTBOX IMAGES
+    ----------- -->
 
-<body>
-      <div class="line" id="scrollIndicator"></div>
-      <div class="main"><div class="title">
-  <div class="name">
-    <h2><a href="https://guestdaniel.github.io/"
-	   style="text-decoration: none; color: inherit;">Daniel Guest</a></h2>
-  </div>
-  <div class="color-scheme">
-    <input type="checkbox" class="checkbox" id="chk" />
-    <label class="label" for="chk">
-      <i class="fas fa-moon"></i>
-      <i class="fas fa-sun"></i>
-      <div class="ball"></div>
-    </label>
-  </div>
-</div>
-<script>
-  const themeSetter = (theme) => {
-      document.body.classList.toggle('light')
-      localStorage.setItem('theme', theme)
-      blockSwitcher()
-  }
-
-  const blockSwitcher = () => [...document.getElementsByTagName("BLOCKQUOTE")]
-	.forEach(b => b.classList.toggle('light'))
-
-  const styleSwapper = () => {
-      document.body.classList.add('back-transition')
-      if (localStorage.getItem('theme') === 'dark') themeSetter('light')
-      else if (localStorage.getItem('theme') === 'light') themeSetter('dark')
-  }
-
-  if (localStorage.getItem('theme') === 'light'){
-      themeSetter('light')
-      document.addEventListener("DOMContentLoaded", blockSwitcher)
-  }
- else localStorage.setItem('theme', 'dark')
-
-  document.getElementById('chk').addEventListener('change',styleSwapper);
-
-  window.addEventListener("scroll", () => {
-      let height = document.documentElement.scrollHeight
-          - document.documentElement.clientHeight;
-      if(height >= 500){
-	  let winScroll = document.body.scrollTop
-              || document.documentElement.scrollTop;
-	  let scrolled = (winScroll / height) * 100;
-	  document.getElementById("scrollIndicator").style.width = scrolled + "%";
-      }
-  });
-</script>
-
-<div class="intro" style="align-items: center">
+    <!-- PHOTOS grid -->
   
-  <img class="image" src='https://guestdaniel.github.io/img/profile.jpg' title="Icon by freepik rom www.flaticon.com" width="200px"/>
-  <ul>
-    <li class="intro-quote"></li>
-  </ul>
-  
-  <p>PhD student in the Department of Psychology at the University of Minnesota working in Dr. Andrew Oxenham&#39;s Auditory Perception and Cognition Lab and Dr. Kendrick Kay&#39;s Computational Visual Neuroscience Lab. Current research focuses include perception of complex sounds at high frequencies and representation of high-level visual features in the human pulvinar. Interested in perception, neuroscience, statistics, programming, and mathematics.</p>
-</div>
-<div class="nav"><a href="https://guestdaniel.github.io/about">About</a><a href="https://guestdaniel.github.io/cv">Curriculum Vitae</a><a href="https://guestdaniel.github.io/research">Research</a>
-</div>
-
-<footer id="footer">
-    <strong></strong>
-    <div class="social">
-        &nbsp; <a href="mailto:guest121@umn.edu" target="_blank" rel="noopener" title="Email"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a> &nbsp;&nbsp; <a href="https://twitter.com/drdrguest" target="_blank" rel="noopener" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a> &nbsp;&nbsp; <a href="https://github.com/guestdaniel" target="_blank" rel="noopener" title="Github"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a> &nbsp;&nbsp; <a href="https://www.linkedin.com/in/guest-daniel/" target="_blank" rel="noopener" title="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a> &nbsp;
-    </div><strong></strong>
-    <p style="color:grey;">© 2021 Daniel Guest.  <a href="https://creativecommons.org/licenses/by/4.0/">Some rights reserved</a>.</p>
-</footer>
-</div>
-    </body>
+    <a href="#photos" class="lightbox" id="img-01"><img loading="lazy" alt="" src="//dummyimage.com/3000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-02"><img loading="lazy" alt="" src="//dummyimage.com/4000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-03"><img loading="lazy" alt="" src="//dummyimage.com/3000x4000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-04"><img loading="lazy" alt="" src="//dummyimage.com/3000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-05"><img loading="lazy" alt="" src="//dummyimage.com/4000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-06"><img loading="lazy" alt="" src="//dummyimage.com/3000x4000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-07"><img loading="lazy" alt="" src="//dummyimage.com/3000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-08"><img loading="lazy" alt="" src="//dummyimage.com/4000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-09"><img loading="lazy" alt="" src="//dummyimage.com/3000x4000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-10"><img loading="lazy" alt="" src="//dummyimage.com/3000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-11"><img loading="lazy" alt="" src="//dummyimage.com/4000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-12"><img loading="lazy" alt="" src="//dummyimage.com/3000x4000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-13"><img loading="lazy" alt="" src="//dummyimage.com/3000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-14"><img loading="lazy" alt="" src="//dummyimage.com/4000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-15"><img loading="lazy" alt="" src="//dummyimage.com/3000x4000/ddd/bbb"></a>    
+    
+    <!-- Other images -->
+    
+    <a href="#about" class="lightbox" id="img-about"><img loading="lazy" alt="" src="//dummyimage.com/2400x1200/ddd/bbb"></a>
+    
+  </body>
 </html>
